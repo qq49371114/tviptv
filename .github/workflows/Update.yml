@@ -58,7 +58,7 @@ jobs:
         cat CNTV.m3u >> IPTV.m3u
         cat Adult.m3u >> IPTV.m3u
         sed -i '/#EXTM3U/d' IPTV.m3u
-        sed -i '1i #EXTM3U' IPTV.m3u
+        sed -i '1i ##EXTM3U x-tvg-url="https://mirror.ghproxy.com/raw.githubusercontent.com/qq49371114/tviptv/Files/EPG.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"' IPTV.m3u
         sed -i '/^\s*$/d' IPTV.m3u
 
         # 节目源
