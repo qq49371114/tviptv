@@ -43,9 +43,9 @@ jobs:
         # 酒店源
         rm -f live.m3u && touch live.m3u
         wget https://mirror.ghproxy.com/raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u -O live1.m3u && sed -i -n '/央视/,+1p' live1.m3u
-       wget https://mirror.ghproxy.com/raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u -O live2.m3u && sed -i -n '/卫视/,+1p' live2.m3u
+        wget https://mirror.ghproxy.com/raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u -O live2.m3u && sed -i -n '/卫视/,+1p' live2.m3u
         wget https://mirror.ghproxy.com/raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u -O live3.m3u && sed -i -n '/地方/,+1p' live3.m3u
-       wget https://mirror.ghproxy.com/raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u -O live4.m3u && sed -i -n '/数字/,+1p' live4.m3u
+        wget https://mirror.ghproxy.com/raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u -O live4.m3u && sed -i -n '/数字/,+1p' live4.m3u
         wget https://mirror.ghproxy.com/raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u -O live5.m3u && sed -i -n '/国际/,+1p' live5.m3u
        
          cat live1.m3u >> live.m3u
