@@ -1,11 +1,7 @@
 name: Update test
 
 on:
-  watch:
-    types: [started]
-  schedule:
-#    - cron: 0,30 * * * *
-    - cron: '45 21 * * *'
+  
     workflow_dispatch:
 
 env:
